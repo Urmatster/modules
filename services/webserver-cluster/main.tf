@@ -115,6 +115,7 @@ resource "aws_lb_listener_rule" "asg" {
   }
 }
 
+
 resource "aws_security_group" "alb" {
   name = "${var.cluster_name}-alb"
 }
