@@ -43,3 +43,8 @@ variable "server_port" {
   type        = number
   default     = 8080
 }
+variable "custom_tags" {
+  description = "Custom tags to set on the instances in the ASG"
+  type = map(string)
+  default = {}
+}
